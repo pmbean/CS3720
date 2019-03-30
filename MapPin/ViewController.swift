@@ -23,30 +23,15 @@ class ViewController: UIViewController, MKMapViewDelegate {
         mapView.setRegion(coordinateRegion, animated: false)
         mapView.regionThatFits(coordinateRegion)
         
-        var annotation1 = MKPointAnnotation()
-        annotation1.title = "Swansea Bay"
-        annotation1.subtitle = "Beautiful Beaches"
-        annotation1.coordinate = CLLocationCoordinate2D(latitude: 51.587736, longitude: -3.90152)
+        var annotation1 = MyPin(title: "Swansea Bay", subtitle: "Beautiful Beaches", coordinate: CLLocationCoordinate2D(latitude: 51.587736, longitude: -3.90152))
         
-        var annotation2 = MKPointAnnotation()
-        annotation2.title = "Menai Bridge"
-        annotation2.subtitle = "Fantastic Engineering"
-        annotation2.coordinate = CLLocationCoordinate2D(latitude:53.220527, longitude: -4.163561)
+        var annotation2 = MyPin(title: "Menai Bridge", subtitle: "Fantastic Engineering", coordinate: CLLocationCoordinate2D(latitude:53.220527, longitude: -4.163561))
         
-        var annotation3 = MKPointAnnotation()
-        annotation3.title = "Paroh Dearc Y Scarlets"
-        annotation3.subtitle = "Beautiful Beaches"
-        annotation3.coordinate = CLLocationCoordinate2D(latitude: 51.678809, longitude: -4.127469)
+        var annotation3 = MyPin(title: "Paroh Dearc Y Scarlets", subtitle: "Beautiful Beaches", coordinate: CLLocationCoordinate2D(latitude: 51.678809, longitude: -4.127469))
         
-        var annotation4 = MKPointAnnotation()
-        annotation4.title = "Castell Coch"
-        annotation4.subtitle = "A Fairytale Castle"
-        annotation4.coordinate = CLLocationCoordinate2D(latitude: 51.535819, longitude: -3.2547)
+        var annotation4 = MyPin(title: "Castell Coch", subtitle: "A Fairytale Castle", coordinate: CLLocationCoordinate2D(latitude: 51.535819, longitude: -3.2547))
         
-        var annotation5 = MKPointAnnotation()
-        annotation5.title = "Arthur's Stone"
-        annotation5.subtitle = "Rock Of Legend"
-        annotation5.coordinate = CLLocationCoordinate2D(latitude: 51.593735, longitude: -4.179525)
+        var annotation5 = MyPin(title: "Arthur's Stone", subtitle: "Rock Of Legend", coordinate: CLLocationCoordinate2D(latitude: 51.593735, longitude: -4.179525))
         
         mapView.addAnnotation(annotation1)
         mapView.addAnnotation(annotation2)
