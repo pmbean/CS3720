@@ -14,6 +14,13 @@
 		EF1A8302224EEE8800CA45E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1A8300224EEE8800CA45E4 /* LaunchScreen.storyboard */; };
 		EF1A830B224EEFC400CA45E4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A830A224EEFC400CA45E4 /* MapKit.framework */; };
 		EF1A830D224EF7BE00CA45E4 /* MyPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A830C224EF7BE00CA45E4 /* MyPin.swift */; };
+		EF1A83102251867600CA45E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A82F9224EEE8600CA45E4 /* ViewController.swift */; };
+		EF1A83112251867600CA45E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A82F7224EEE8600CA45E4 /* AppDelegate.swift */; };
+		EF1A83122251867600CA45E4 /* MyPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A830C224EF7BE00CA45E4 /* MyPin.swift */; };
+		EF1A83142251867600CA45E4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1A830A224EEFC400CA45E4 /* MapKit.framework */; };
+		EF1A83162251867600CA45E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1A8300224EEE8800CA45E4 /* LaunchScreen.storyboard */; };
+		EF1A83172251867600CA45E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1A82FE224EEE8800CA45E4 /* Assets.xcassets */; };
+		EF1A83182251867600CA45E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1A82FB224EEE8600CA45E4 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,8 @@
 		EF1A8303224EEE8800CA45E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF1A830A224EEFC400CA45E4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EF1A830C224EF7BE00CA45E4 /* MyPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPin.swift; sourceTree = "<group>"; };
+		EF1A831C2251867600CA45E4 /* MapPinSatellite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapPinSatellite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1A831D2251867600CA45E4 /* MapPinSatellite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MapPinSatellite-Info.plist"; path = "/Users/pbean/Projects/MapPin/MapPinSatellite-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +43,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF1A830B224EEFC400CA45E4 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1A83132251867600CA45E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1A83142251867600CA45E4 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +63,7 @@
 				EF1A82F6224EEE8600CA45E4 /* MapPin */,
 				EF1A82F5224EEE8600CA45E4 /* Products */,
 				EF1A8309224EEFC400CA45E4 /* Frameworks */,
+				EF1A831D2251867600CA45E4 /* MapPinSatellite-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				EF1A82F4224EEE8600CA45E4 /* MapPin.app */,
+				EF1A831C2251867600CA45E4 /* MapPinSatellite.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +118,23 @@
 			productReference = EF1A82F4224EEE8600CA45E4 /* MapPin.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EF1A830E2251867600CA45E4 /* MapPinSatellite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF1A83192251867600CA45E4 /* Build configuration list for PBXNativeTarget "MapPinSatellite" */;
+			buildPhases = (
+				EF1A830F2251867600CA45E4 /* Sources */,
+				EF1A83132251867600CA45E4 /* Frameworks */,
+				EF1A83152251867600CA45E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapPinSatellite;
+			productName = MapPin;
+			productReference = EF1A831C2251867600CA45E4 /* MapPinSatellite.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -128,6 +164,7 @@
 			projectRoot = "";
 			targets = (
 				EF1A82F3224EEE8600CA45E4 /* MapPin */,
+				EF1A830E2251867600CA45E4 /* MapPinSatellite */,
 			);
 		};
 /* End PBXProject section */
@@ -143,6 +180,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF1A83152251867600CA45E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1A83162251867600CA45E4 /* LaunchScreen.storyboard in Resources */,
+				EF1A83172251867600CA45E4 /* Assets.xcassets in Resources */,
+				EF1A83182251867600CA45E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -153,6 +200,16 @@
 				EF1A82FA224EEE8600CA45E4 /* ViewController.swift in Sources */,
 				EF1A82F8224EEE8600CA45E4 /* AppDelegate.swift in Sources */,
 				EF1A830D224EF7BE00CA45E4 /* MyPin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1A830F2251867600CA45E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1A83102251867600CA45E4 /* ViewController.swift in Sources */,
+				EF1A83112251867600CA45E4 /* AppDelegate.swift in Sources */,
+				EF1A83122251867600CA45E4 /* MyPin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +385,40 @@
 			};
 			name = Release;
 		};
+		EF1A831A2251867600CA45E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MapPinSatellite-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thedevbean.MapPinSatellite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF1A831B2251867600CA45E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MapPinSatellite-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thedevbean.MapPinSatellite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -345,6 +436,15 @@
 			buildConfigurations = (
 				EF1A8307224EEE8800CA45E4 /* Debug */,
 				EF1A8308224EEE8800CA45E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF1A83192251867600CA45E4 /* Build configuration list for PBXNativeTarget "MapPinSatellite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1A831A2251867600CA45E4 /* Debug */,
+				EF1A831B2251867600CA45E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

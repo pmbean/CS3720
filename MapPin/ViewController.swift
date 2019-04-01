@@ -16,7 +16,14 @@ class ViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        var currentBundle = Bundle.main.bundleIdentifier
+        print(currentBundle!)
+        
         mapView.delegate = self
+        if (currentBundle?.hasSuffix("MapPinSatellite"))!
+        {
+            mapView.mapType = MKMapType.satellite
+        }
         let centerPoint = CLLocationCoordinate2D(latitude: 52.011937, longitude: -3.713379)
         let coordinateSpan = MKCoordinateSpan(latitudeDelta: 3.5, longitudeDelta: 3.5)
         let coordinateRegion = MKCoordinateRegion(center: centerPoint, span: coordinateSpan)
